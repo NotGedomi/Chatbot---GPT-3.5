@@ -1,0 +1,185 @@
+/* Estilos generales */
+body,
+html {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif !important;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor del chat */
+#chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f1cc2d; /* Cambiado */
+  border: 1px solid #f1cc2d; /* Cambiado */
+  border-radius: 10px;
+  max-width: 600px;
+  width: 80%;
+  padding: 20px;
+}
+
+/* Historial del chat */
+#chat-history {
+  width: 100%;
+  height: 500px;
+  overflow-y: auto;
+  padding: 4px;
+}
+
+/* Entrada del usuario */
+#user-input {
+  color: #000000; /* Cambiado */
+  padding: 10px;
+  background-color: #ffffff; /* Cambiado */
+  border: 1px solid #f1cc2d; /* Cambiado */
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#user-input:focus {
+  outline: none;
+}
+
+/* Botón de enviar */
+#send-btn {
+  background-color: #00813C; /* Cambiado */
+  color: #ffffff; /* Cambiado */
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-top: 10px;
+  float: right;
+}
+.message.user {
+    background-color: #ffffff; /* Cambiado */
+    color: #00813C; /* Cambiado */
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 10px;
+}
+
+.message.bot {
+    background-color: #00813C; /* Cambiado */
+    color: #ffffff; /* Cambiado */
+    align-self: flex-start;
+    margin-right: auto;
+    margin-left: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 10px;
+}
+
+/* Limpia el flotado del botón de enviar */
+#chat-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Añade estilos para el enlace en la respuesta del chatbot */
+.message.bot a {
+  color: #f1cc2d; /* Cambiado */
+  text-decoration: none;
+}
+
+.message.bot a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos de los mensajes */
+.message {
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  word-wrap: break-word;
+  width: fit-content;
+  max-width: 90%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.message.visible {
+  font-family: 'Roboto', sans-serif;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos personalizados del scrollbar */
+#chat-history {
+    /* Color del thumb (manejador) y del track (fondo) del scrollbar */
+    scrollbar-color: #00813C #ffffff;
+}
+
+#chat-history::-webkit-scrollbar {
+    width: 10px; /* Ancho del scrollbar vertical */
+    height: 10px; /* Altura del scrollbar horizontal */
+}
+
+#chat-history::-webkit-scrollbar-thumb {
+    background: #00813C; /* Color del thumb (manejador) del scrollbar */
+    border-radius: 5px; /* Bordes redondeados del thumb */
+}
+
+#chat-history::-webkit-scrollbar-track {
+    background: #ffffff; /* Color del track (fondo) del scrollbar */
+    border-radius: 5px; /* Bordes redondeados del track */
+}
+/* Estilos de los contenedores de mensajes */
+.message-container {
+  display: flex;
+  align-items: flex-end;
+  max-width: 90%;
+  margin: 5px 0;
+  align-items: center;
+}
+
+.message-container.user {
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  left: 50px;
+  position: relative;
+}
+
+.message-container.bot {
+  justify-content: flex-start;
+}
+
+
+/* Estilos de las imágenes de perfil */
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.profile-image.user {
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  /*background-image: url('https://d3uqmu8cgrse7a.cloudfront.net/dist/client/img/d7139db.svg');*/
+  background-size: cover;
+  margin-right: 5px;
+  margin-left: 6px;
+}
+
+.profile-image.bot {
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/e660d020816095.562f195e6f378.png');
+  background-size: cover;
+  margin-left: 5px;
+  margin-right: 6px;
+}

@@ -1,0 +1,12 @@
+{
+    "require": {
+        "tectalic/openai": "^1.4",
+        "guzzlehttp/guzzle": "^7.5",
+        "fabpot/goutte": "^4.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
