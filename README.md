@@ -11,13 +11,13 @@ Recuerda cambiar 'TU-API-KEY-DE-OPENAI'.
 ### Instalación: 
 Para instalar las librerías necesarias para el chatbot, primero asegúrate de tener instalado [Composer](https://getcomposer.org/), que es un administrador de dependencias para PHP. Luego, sigue estos pasos:
 
-1- Navega a la carpeta de tu proyecto en la línea de comandos o terminal.
-2- Ejecuta el siguiente comando en la línea de comandos o terminal para instalar las librerías especificadas en el archivo composer.json:
+- 1- Navega a la carpeta de tu proyecto en la línea de comandos o terminal.
+- 2- Ejecuta el siguiente comando en la línea de comandos o terminal para instalar las librerías especificadas en el archivo composer.json:
 
 ```
 composer install
 ```
-3- Abre el chatbot en tu servidor web de preferencia.
+- 3- Abre el chatbot en tu servidor web de preferencia.
 
 ## Vista:
 
