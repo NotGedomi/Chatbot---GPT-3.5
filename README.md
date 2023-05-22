@@ -4,6 +4,7 @@ Asistente personalizado para responder preguntas relacionadas con la pollería R
 ## Prerrequisitos:
 - [Git](https://git-scm.com/)
 - [Composer](https://getcomposer.org/)
+- [Una API Key de OpenAI](https://platform.openai.com/account/api-keys)
 
 ### Notas:
 Recuerda cambiar 'TU-API-KEY-DE-OPENAI'.
@@ -25,7 +26,9 @@ composer install
     <img src="https://s12.gifyu.com/images/Rokys.gif" alt="Chatbot-GPT-3.5">
 </div>
 
-
+## Créditos:
+- [@guzzle (Librería Guzzle)](https://github.com/guzzle)
+- [@tectalichq (Librería OpenAI REST API Client)](https://github.com/tectalichq)
 
 
  
