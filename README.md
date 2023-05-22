@@ -27,8 +27,8 @@ composer install
 </div>
 
 ## Créditos:
-- [@guzzle (Librería Guzzle)](https://github.com/guzzle)
-- [@tectalichq (Librería OpenAI REST API Client)](https://github.com/tectalichq)
+- [@guzzle (Guzzle)](https://github.com/guzzle)
+- [@tectalichq (OpenAI REST API Client)](https://github.com/tectalichq)
 
 
  
